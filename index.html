@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is Programming? | ما هو البرمجة؟ | 编程是什么？</title>
+    <style>
+        /* الخلفية */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px 30px;
+            line-height: 1.7;
+            color: #eee;
+            background-color: #121212;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            user-select: none;
+        }
+
+        /* العناوين */
+        h1, h2, h3 {
+            color: #ffcc00;
+            text-align: center;
+            text-shadow: 0 0 10px #ffcc00;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+
+        /* الخطوط المميزة */
+        mark {
+            background-color: #ffcc0040;
+            color: #ffcc00;
+            padding: 0 6px;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        /* خطوط الباراجراف */
+        p, li {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            color: #ddd;
+            text-shadow: 0 0 3px #000;
+        }
+
+        /* الروابط */
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffee55;
+            text-decoration: underline;
+        }
+
+        /* الأزرار */
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav button {
+            margin: 0 15px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border: 2px solid #ffcc00;
+            background: transparent;
+            color: #ffcc00;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px #ffcc00;
+            user-select: none;
+        }
+
+        nav button.active,
+        nav button:hover {
+            background: #ffcc00;
+            color: #121212;
+            box-shadow: 0 0 20px #ffee55;
+        }
+
+        /* الأقسام */
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        /* الصور */
+        img {
+            display: block;
+            margin: 25px auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px #ffcc00aa;
+            max-width: 100%;
+            height: auto;
+            user-select: none;
+        }
+
+        /* القوائم */
+        ul, ol {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            padding-left: 25px;
+        }
+
+        /* نصوص الكود */
+        pre {
+            background-color: #222;
+            color: #ffee55;
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 15px auto 30px auto;
+            overflow-x: auto;
+            box-shadow: 0 0 10px #ffcc00;
+            user-select: text;
+        }
+
+        /* العلامات القديمة والجديدة */
+        del {
+            color: #888;
+            font-style: italic;
+            user-select: none;
+        }
+
+        ins {
+            color: #ffee55;
+            font-weight: 700;
+            text-decoration: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <button id="btn-en" class="active" onclick="showLang('en')">English</button>
+        <button id="btn-ar" onclick="showLang('ar')">العربية</button>
+        <button id="btn-zh" onclick="showLang('zh')">中文</button>
+    </nav>
+
+    <!-- English Section -->
+    <section id="en" class="lang-section active" lang="en" dir="ltr">
+        <h1>Programming Basics</h1>
+        <hr />
+
+        <p>
+            <b>Programming</b> is the process of creating a set of instructions that tell a computer how to perform a task.
+            These instructions are written using <mark>programming languages</mark> such as <i>Python</i>,
+            <i>JavaScript</i>, and <i>C++</i>.
+        </p>
+
+        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" width="600" />
+
+        <hr />
+
+        <h2>Why is Programming Important?</h2>
+        <p>
+            Programming helps us to solve problems and build amazing things like websites, mobile apps, and games.
+            It also powers many devices we use daily, from smartphones to cars.
+            As <strong>Bill Gates</strong> said:
+            <q>Learning to write programs stretches your mind.</q>
+        </p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/440px-Bill_Gates_2018.jpg"
+            alt="Bill Gates" width="300" />
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank" rel="noopener">Bill Gates - Learn More</a>
+
+        <hr />
+
+        <h3>Popular Programming Languages</h3>
+        <ul>
+            <li><b>Python</b> – easy to learn, widely used in data science, AI, and web development</li>
+            <li><b>JavaScript</b> – used for interactive web pages and web applications</li>
+            <li><b>C++</b> – powerful and fast, often used in game development and system software</li>
+            <li><b>Java</b> – used in enterprise applications and Android apps</li>
+            <li><b>Ruby</b> – known for simplicity and productivity in web development</li>
+        </ul>
+
+        <hr />
+
+        <h3>Simple Code Examples</h3>
+
+        <p><b>Python example:</b></p>
+        <pre>
+print("Hello, world!")
+        </pre>
+
+        <p><b>JavaScript example:</b></p>
+        <pre>
+console.log("Hello, world!");
+        </pre>
+
+        <p>Programming is like giving a recipe to a chef: you provide clear step-by-step instructions and the computer
+            follows them exactly.</p>
+
+        <hr />
+
+        <h3>How to Start Learning Programming?</h3>
+        <ol>
+            <li>Choose a beginner-friendly language like Python.</li>
+            <li>Practice writing simple programs regularly.</li>
+            <li>Use online resources, tutorials, and courses.</li>
+            <li>Join programming communities to ask questions and share knowledge.</li>
+            <li>Work on small projects to apply what you learn.</li>
+        </ol>
+
+        <hr />
+
+        <p><del>Old idea:</del> Programming is only for smart people.</p>
+        <p><ins>New idea:</ins> Anyone can learn programming with time and effort!</p>
+    </section>
+
+    <!-- Arabic Section -->
+    <section id="ar" class="lang-section" lang="ar" dir="rtl">
+        <h1>أساسيات البرمجة</h1>
+        <hr />
+
+        <p>
+            <b>البرمجة</b> هي عملية إنشاء مجموعة من التعليمات التي تخبر الحاسوب بكيفية تنفيذ مهمة معينة.
+            تُكتب هذه التعليمات باستخدام <mark>لغات البرمجة</mark> مثل <i>بايثون</i>، <i>جافاسكريبت</i>، و<i>C++</i>.
+        </p>
+
+        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="شعار بايثون" width="600" />
+
+        <hr />
+
+        <h2>لماذا البرمجة مهمة؟</h2>
+        <p>
+            تساعدنا البرمجة على حل المشكلات وبناء أشياء رائعة مثل المواقع الإلكترونية، تطبيقات الهاتف، والألعاب.
+            كما أنها تدير العديد من الأجهزة التي نستخدمها يوميًا، من الهواتف الذكية إلى السيارات.
+            كما قال <strong>بيل غيتس</strong>:
+            <q>تعلم كتابة البرامج يوسع عقلك.</q>
+        </p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/440px-Bill_Gates_2018.jpg"
+            alt="بيل غيتس" width="300" />
+        <br />
+        <a href="https://ar.wikipedia.org/wiki/%D8%A8%D9%8A%D9%84_%D8%BA%D9%8A%D8%AA%D8%B3" target="_blank" rel="noopener">بيل غيتس - تعرف عليه أكثر</a>
+
+        <hr />
+
+        <h3>لغات البرمجة الشهيرة</h3>
+        <ul>
+            <li><b>بايثون</b> – سهلة التعلم، تُستخدم بشكل واسع في علوم البيانات، الذكاء الاصطناعي، وتطوير الويب</li>
+            <li><b>جافاسكريبت</b> – تُستخدم في صفحات الويب التفاعلية وتطبيقات الويب</li>
+            <li><b>C++</b> – قوية وسريعة، تُستخدم غالبًا في تطوير الألعاب وبرامج النظام</li>
+            <li><b>جافا</b> – تُستخدم في التطبيقات المؤسسية وتطبيقات أندرويد</li>
+            <li><b>روبي</b> – معروفة ببساطتها وإنتاجيتها في تطوير الويب</li>
+        </ul>
+
+        <hr />
+
+        <h3>أمثلة برمجية بسيطة</h3>
+
+        <p><b>مثال بايثون:</b></p>
+        <pre>
+print("مرحبًا، أيها العالم!")
+        </pre>
+
+        <p><b>مثال جافاسكريبت:</b></p>
+        <pre>
+console.log("مرحبًا، أيها العالم!");
+        </pre>
+
+        <p>البرمجة تشبه إعطاء وصفة للطاهي: أنت تقدم خطوات واضحة يتبعها الحاسوب بدقة.</p>
+
+        <hr />
+
+        <h3>كيف تبدأ تعلم البرمجة؟</h3>
+        <ol>
+            <li>اختر لغة سهلة للمبتدئين مثل بايثون.</li>
+            <li>تمرن على كتابة برامج بسيطة بانتظام.</li>
+            <li>استخدم المصادر والدورات التعليمية عبر الإنترنت.</li>
+            <li>انضم إلى مجتمعات البرمجة لطرح الأسئلة ومشاركة المعرفة.</li>
+            <li>اعمل على مشاريع صغيرة لتطبيق ما تعلمته.</li>
+        </ol>
+
+        <hr />
+
+        <p><del>الفكرة القديمة:</del> البرمجة فقط للأذكياء.</p>
+        <p><ins>الفكرة الجديدة:</ins> يمكن لأي شخص تعلم البرمجة مع الوقت والجهد!</p>
+    </section>
+
+    <!-- Chinese Section -->
+    <section id="zh" class="lang-section" lang="zh" dir="ltr">
+        <h1>编程基础</h1>
+        <hr />
+
+        <p>
+            <b>编程</b> 是创建一组指令，告诉计算机如何执行任务的过程。
+            这些指令使用 <mark>编程语言</mark> 编写，例如 <i>Python</i>、<i>JavaScript</i> 和 <i>C++</i>。
+        </p>
+
+        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python 徽标" width="600" />
+
+        <hr />
+
+        <h2>为什么编程很重要？</h2>
+        <p>
+            编程帮助我们解决问题，构建网站、移动应用和游戏等惊人项目。
+            它还驱动着我们日常使用的许多设备，从智能手机到汽车。
+            正如 <strong>比尔·盖茨</strong> 所说：
+            <q>学习编写程序能够拓展你的思维。</q>
+        </p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/440px-Bill_Gates_2018.jpg"
+            alt="比尔·盖茨" width="300" />
+        <br />
+        <a href="https://zh.wikipedia.org/wiki/%E6%AF%95%E5%B0%94%E7%9B%96%E8%92%82%E8%92%82%E6%96%AF" target="_blank" rel="noopener">比尔·盖茨 - 了解更多</a>
+
+        <hr />
+
+        <h3>流行的编程语言</h3>
+        <ul>
+            <li><b>Python</b> – 易学，广泛用于数据科学、人工智能和网页开发</li>
+            <li><b>JavaScript</b> – 用于交互式网页和网页应用</li>
+            <li><b>C++</b> – 强大且快速，常用于游戏开发和系统软件</li>
+            <li><b>Java</b> – 用于企业应用和安卓应用</li>
+            <li><b>Ruby</b> – 以简洁和高效著称，适合网页开发</li>
+        </ul>
+
+        <hr />
+
+        <h3>简单代码示例</h3>
+
+        <p><b>Python 示例：</b></p>
+        <pre>
+print("你好，世界！")
+        </pre>
+
+        <p><b>JavaScript 示例：</b></p>
+        <pre>
+console.log("你好，世界！");
+        </pre>
+
+        <p>编程就像给厨师一份食谱：你提供明确的步骤，计算机按步骤执行。</p>
+
+        <hr />
+
+        <h3>如何开始学习编程？</h3>
+        <ol>
+            <li>选择像Python这样适合初学者的语言。</li>
+            <li>定期练习编写简单程序。</li>
+            <li>利用网络资源、教程和课程。</li>
+            <li>加入编程社区，提出问题并分享知识。</li>
+            <li>做一些小项目来应用你学到的知识。</li>
+        </ol>
+
+        <hr />
+
+        <p><del>旧观念：</del> 编程只是聪明人的专利。</p>
+        <p><ins>新观念：</ins> 任何人都可以通过时间和努力学会编程！</p>
+    </section>
+
+    <script>
+        function showLang(lang) {
+            const sections = document.querySelectorAll('.lang-section');
+            sections.forEach(section => {
+                if (section.id === lang) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+
+            // زر اللغة النشط
+            document.querySelectorAll('nav button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
